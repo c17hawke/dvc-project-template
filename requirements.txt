@@ -1,4 +1,6 @@
 ### dependency
+tqdm
+dvc
 
 
 ### local packages -

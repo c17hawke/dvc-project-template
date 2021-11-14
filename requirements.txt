@@ -1,6 +1,8 @@
 ### dependency
 tqdm
 dvc
+pandas
+numpy
 
 
 ### local packages -

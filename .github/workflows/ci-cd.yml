@@ -1,1 +1,27 @@
-# add ci-cd steps here
+# # uncomment below lines to use CML
+# name: DVC-project
+
+# on: [push]
+
+# jobs:
+#   run:
+#     runs-on: [ubuntu-latest]
+#     steps:
+#       - uses: actions/checkout@v2
+#       - uses: iterative/setup-cml@v1
+#       - uses: actions/setup-python@v2
+#         with:
+#           python-version: '3.7'
+
+#       - name: cml-run
+#         env: 
+#           repo_token: ${{ secrets.GITHUB_TOKEN }}
+#         run: |
+#           # Your ML wokflow commands
+#           pip install --upgrade pip
+#           pip install -r requirements.txt
+#           dvc repro -v
+#           echo "# REPORTS" >> report.md
+#           echo "## metrics" >> report.md
+#           cat scores.json >> report.md
+#           cml-send-comment report.md
